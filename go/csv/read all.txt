@@ -1,0 +1,5 @@
+csvReader := csv.NewReader($1)
+records, err := csvReader.ReadAll()
+if err != nil {
+    log.Fatal("cannot read csv of ", $1, err)
+}

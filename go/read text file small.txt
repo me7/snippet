@@ -1,0 +1,6 @@
+$2, err := ioutil.ReadAll($1)
+if err != nil {
+    ${3:log.Fatal("error read ", f, err)}
+}
+fmt.Println($2)
+

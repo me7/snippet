@@ -1,0 +1,6 @@
+scanner := bufio.NewScanner(${1:file})
+for scanner.Scan() {
+    ${2:fmt.Println}(scanner.Text())
+}
+
+$100

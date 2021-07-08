@@ -1,0 +1,19 @@
+buf := make([]byte, 32*1024)
+for {
+    n, err := ${1:file}.Read(buf)
+
+    if n > 0 {
+        ${2:fmt.Print(buf[:n])}
+    }
+
+    if err == io.EOF {
+        break
+    }
+
+    if err != nil {
+        log.Fatalf("read %d bytes: %v", n, err)
+        break
+    }
+}
+
+$100
