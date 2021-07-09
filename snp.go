@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
@@ -31,7 +30,7 @@ func parseFile() []byte {
 		if strings.HasSuffix(filePath, ".txt") {
 
 			// body
-			txt, err := ioutil.ReadFile(filePath)
+			txt, err := os.ReadFile(filePath)
 			if err != nil {
 				return err
 			}
@@ -87,6 +86,6 @@ func main() {
 	target := filepath.Join(localConfig, "Code", "User", "snippets", "snp.code-snippets")
 	fmt.Println(string(json))
 	fmt.Println("Updated to", target)
-	ioutil.WriteFile(target, json, 0644)
+	os.WriteFile(target, json, 0644)
 
 }
