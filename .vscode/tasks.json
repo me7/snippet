@@ -6,7 +6,7 @@
         {
             "label": "update snippet to vscode by press ctrl+shift+b",
             "type": "shell",
-            "command": "snp -u",
+            "command": "./snp",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
