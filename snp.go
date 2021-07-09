@@ -18,7 +18,6 @@ type snippetItem struct {
 }
 
 func parseFile() []byte {
-
 	snippet := make(map[string]snippetItem)
 
 	// walk dir, if found .txt then add to snippet
@@ -28,7 +27,6 @@ func parseFile() []byte {
 			return err
 		}
 		if strings.HasSuffix(filePath, ".txt") {
-
 			// body
 			txt, err := os.ReadFile(filePath)
 			if err != nil {
@@ -48,9 +46,10 @@ func parseFile() []byte {
 			}
 
 			// prefix
-			prefix := stripCwd[:len(stripCwd)-4]
+			prefixWithScope := stripCwd[:len(stripCwd)-4]
+			prefix := prefixWithScope[len(scope)+1:]
 
-			snippet[prefix] = snippetItem{scope, body, prefix}
+			snippet[prefixWithScope] = snippetItem{scope, body, prefix}
 		}
 		return nil
 	})
