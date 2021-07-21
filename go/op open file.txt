@@ -1,5 +1,0 @@
-f, err := os.Open($1)
-if err != nil {
-    log.Fatal("error open ", $1, err)
-}
-defer f.Close()

@@ -1,0 +1,9 @@
+${1:// demo import
+import (
+    "fmt"                   // standard lib
+    "./util"                // relative
+    "github.com/u/p"        // from web
+    "github.com/u/p/v2"     // from web with version
+    cr "crypto/rand"        // alias
+    _ "image/jpg"           // execute init() function    
+)}

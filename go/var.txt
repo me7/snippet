@@ -1,0 +1,7 @@
+var ${1:x bool = true
+int/int8/16/32/64 = 1_000_000
+uint/uint8/16/32/64 = math.MaxUint64
+float/float32/64 = 1.7e-12
+string = `escape"this"`
+complex/complex64/128 = complex(2.5,3.1)
+}

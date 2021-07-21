@@ -1,0 +1,8 @@
+if ${1:n == 0} {
+    ${2:fmt.Println(n)}
+} else if ${3:n > 5} {
+    ${4:fmt.Println(n)}
+} else {
+    ${5:other}
+}
+

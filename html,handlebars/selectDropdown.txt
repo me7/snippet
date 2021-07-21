@@ -1,0 +1,4 @@
+<select id="$1">
+    <option value="$2">$2</option>}
+    $3
+</select>

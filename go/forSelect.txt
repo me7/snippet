@@ -1,0 +1,7 @@
+for {
+    select {
+    case ${1:v := <-Done}: $2
+    ${3:case default:}
+    }
+}
+

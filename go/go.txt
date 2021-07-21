@@ -1,0 +1,8 @@
+${1:// demo go command line
+go mod init github.com/USER/REPO
+go get URL
+
+go test
+go test -v -cover -coverprofile=c.out
+go tool cover -html=c.out
+}

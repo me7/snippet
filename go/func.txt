@@ -1,3 +1,4 @@
-func $1($2) ($3){
-    $4
+func ${1:add}(${2:a, b int}) (${3:int}){
+    ${4:return a + b}
 }
+

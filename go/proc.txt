@@ -1,3 +1,5 @@
-func $1($2) {
-    $3
+func ${1:greet}(${2:name string}) {
+    ${3:fmt.Println("Hi", name)}
 }
+
+

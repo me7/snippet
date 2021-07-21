@@ -1,0 +1,15 @@
+${1: // demo generic, will add in go 1.18
+type Stack[T any] struct {
+    vals []T
+\}
+
+func (s *Stack[T]) Push(val T) {
+    s.vals = append(s.vals, val)
+\}
+
+func main() {
+    var s Stack[int]
+    s.Push(10)
+    var f Stack[float]
+    f.Push(3.6)
+\}}

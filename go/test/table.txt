@@ -1,0 +1,11 @@
+func Test_$1(t *testing.T) {
+    data := []struct {
+        ${2:name string}
+    }{
+        ${3:{"ball"\}},
+    }
+
+    for _, d := range data {
+        t.Run(d.name, func(t *testing.T){$4})
+    }
+}

@@ -1,0 +1,3 @@
+http.HandleFunc("${1:/bar}", func(w http.ResponseWriter, r *http.Request) {
+	${2:fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))}
+})

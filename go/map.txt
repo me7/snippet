@@ -1,0 +1,4 @@
+${1:m := map[string]int{"hello":0, "world":5\}
+v, ok := m["hello"]
+m["hello"] = 7
+delete(m["hello"])}

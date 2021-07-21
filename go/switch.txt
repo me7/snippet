@@ -1,3 +1,5 @@
-switch ${1:var}{
-    case $2: $3
+switch ${1:var} {
+    case ${2:3}: ${3:fmt.Println(x)}
+    ${4:case default:}
 }
+

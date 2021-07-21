@@ -1,0 +1,8 @@
+// demo break, do this to break nested loop
+outer:
+for {
+    for {
+        break outer
+    }
+}
+

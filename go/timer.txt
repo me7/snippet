@@ -1,0 +1,7 @@
+${1:intervalTimer := time.NewTicker(1 * time.Second)
+for {
+    select {
+    case t := <- intervalTimer.C:
+        fmt.Println("Ticker at", t)    
+    \}
+\}}

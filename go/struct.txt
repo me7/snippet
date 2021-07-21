@@ -1,0 +1,6 @@
+type ${1:person} struct {
+    ${2:name string
+    age int
+    pet string}
+}
+

@@ -1,0 +1,4 @@
+if err != nil {
+	fmt.Printf("${1:error of} %v\n", err)
+}
+

@@ -1,0 +1,6 @@
+${1:ch := make(chan int)
+ch := make(chan *Student, 2)  // bufferd channel
+r := <- ch
+ch <- 5
+close(ch)                     // must close by sender
+}

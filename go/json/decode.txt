@@ -1,0 +1,2 @@
+${1:user := User{\}}
+err = json.Unmarshal(dat, ${2:&user})

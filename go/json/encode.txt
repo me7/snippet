@@ -1,0 +1,1 @@
+dat, err := json.Marshal(${1:User})

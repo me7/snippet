@@ -1,0 +1,6 @@
+func Test_${1:SomeFunc}(t *testing.T) {
+    if err := $1($2); err != nil {
+        ${3:t.Error(err)}
+    }
+}
+

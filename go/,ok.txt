@@ -1,0 +1,3 @@
+${1:v, ok := m["something"] // ok if map have key
+v, ok := i.(int)        // ok if convert success
+v, ok := <- ch          // ok if channel still open}

@@ -1,0 +1,2 @@
+${1:// time.Parse
+// time.Format}

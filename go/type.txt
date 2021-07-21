@@ -1,0 +1,4 @@
+${1:type x struct
+type y interface
+type Status string
+type opFunc func(int, int) int}

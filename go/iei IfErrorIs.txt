@@ -1,0 +1,4 @@
+if errors.Is(err, ${1:fs.ErrNotExist}) {
+    $2
+}
+

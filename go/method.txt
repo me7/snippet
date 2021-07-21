@@ -1,0 +1,4 @@
+func ${1:a *App} ${2:add}(${3:num int}) ($5){
+    ${4: a.count += num}
+}
+
