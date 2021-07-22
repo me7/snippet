@@ -1,0 +1,5 @@
+t := template.Must(template.New("hw").Parse("hello {{.}}\n"))
+var err = t.Execute(os.Stdout, "world")
+if err != nil {
+	panic(err)
+}

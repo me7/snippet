@@ -1,0 +1,1 @@
+padding: ${1:T_R_B_L, T_RL_B, TB_RL -> 1px 1px 1px}

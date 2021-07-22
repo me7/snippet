@@ -1,0 +1,8 @@
+t, err := template.ParseGlob("${1:html/*.html}")
+if err != nil {
+	panic(err)
+}
+err = t.ExecuteTemplate(os.Stdout, "${2:1.html}", nil)
+if err != nil {
+	panic(err)
+}

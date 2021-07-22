@@ -1,0 +1,5 @@
+http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+    tmpl := template.Must(template.ParseFiles("layout.html"))
+    data := "DATA"
+    tmpl.Execute(w, data)
+})

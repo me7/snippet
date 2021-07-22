@@ -1,0 +1,11 @@
+file, err := os.Open("${1:1.tpl}")
+if err != nil {
+	panic(err)
+}
+defer file.Close()
+
+byte, err := ioutil.ReadAll(file)
+if err != nil {
+	log.Fatal("error read ", file, err)
+}
+fmt.Println(string(byte))

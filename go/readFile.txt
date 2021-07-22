@@ -1,6 +1,6 @@
-$2, err := ioutil.ReadAll($1)
+byte, err := ioutil.ReadAll(${1:fileHandle})
 if err != nil {
-    ${3:log.Fatal("error read ", f, err)}
+    log.Fatal("error read ", $1, err)
 }
-fmt.Println($2)
+fmt.Println(string(byte))
 

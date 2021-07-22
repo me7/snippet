@@ -1,0 +1,7 @@
+{{if ${1:.cond1}}}
+    ${2:cond1}
+{{else if ${3:cond2}}
+    ${4:cond2}
+{{else}}
+    ${5:else}
+{{end}}

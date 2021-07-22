@@ -1,0 +1,8 @@
+t, err := template.ParseFiles("html/1.html")
+if err != nil {
+    panic(err)
+}
+err = t.Execute(os.Stdout, nil)
+if err != nil {
+    panic(err)
+}

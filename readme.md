@@ -12,3 +12,7 @@ original idea from https://github.com/djyde/snp
 - go build snp.go
 - run
 - it's will generate snp.code-snippet in vscode
+
+### note on file name
+- ...Hello = starter template
+- ...Demo = demonstrate how to use (example code)
